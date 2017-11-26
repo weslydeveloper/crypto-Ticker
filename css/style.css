@@ -1,0 +1,193 @@
+body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    background-color: #0b1c26;
+    overflow: hidden;
+}
+
+
+.content {
+    animation: content 1s forwards;
+}
+
+.coincontent {
+    animation: coincontent 3s forwards;
+}
+
+.coin {
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    background-color: black;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 15px 0px rgba(255,255,255,1);
+}
+
+.coin:hover{
+    -webkit-box-shadow: 0px 0px 39px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 39px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 39px 0px rgba(255,255,255,1);
+    transition: 0.2s;
+}
+
+.coin-field {
+    width: 33%;
+    position: absolute;
+}
+
+.backbutton{
+    height: 80px;
+    opacity: 0.5;
+}
+
+.backbutton:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.backlink {
+    position: absolute;
+    top: 120px;
+    left: 70px;
+
+}
+
+.startsonm {
+    animation: startsonm 2s forwards;
+}
+
+.starteth {
+    animation: starteth 2s forwards;
+}
+
+.startbtc {
+    animation: startbtc 1s forwards;
+}
+
+.active {
+    animation: coinend 2s forwards;
+}
+
+
+.sonm{margin-left: 33%; z-index: 0}
+.eth{margin-left: 33%; z-index: 0}
+.btc{margin-left: 33%; z-index: 1}
+
+.sonmend {margin-left: 0px}
+.ethend {margin-left: 66%}
+.btcend {margin-left: 33%}
+
+.coin img {
+    height: 200px;
+}
+
+.info {
+    opacity: 0;
+    text-align: center;
+    display: block;
+    padding-top: 35vh;
+    font-family: sans-serif;
+    animation: info 3.5s forwards;
+}
+.info h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.info h2 {
+    font-size: 30px;
+}
+
+.subinfo {
+    color: white;
+    font-size: 25px;
+}
+
+@keyframes startsonm {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        margin-left: 33%;
+        transform: rotate(360deg);
+    }
+    100% {
+        margin-left: 0px;
+        transform: rotate(720deg);
+    }
+}
+
+
+@keyframes starteth {
+    0% {
+        transform: rotate(0deg);
+    }
+     50% {
+         margin-left: 33%;
+         transform: rotate(360deg);
+     }
+     100% {
+         margin-left: 66%;
+         transform: rotate(720deg);
+     }
+ }
+
+@keyframes startbtc {
+    0% {
+        transform: rotate(0deg);;
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes coinend {
+     0% {
+         transform: rotate(0deg);;
+     }
+     100% {
+         transform: rotate(360deg);
+         margin-left: 33%;
+     }
+ }
+
+
+@keyframes content {
+    0% {
+        margin-top: 10vh;
+    }
+    100% {
+        margin-top: 35vh;
+    }
+}
+
+
+@keyframes coincontent {
+     0% {
+         margin-top: 35vh;
+     }
+     66% {
+         margin-top: 35vh;
+     }
+     100% {
+         margin-top: 10vh;
+     }
+ }
+
+@keyframes info {
+    0% {
+        opacity: 0;
+    }
+    86% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
